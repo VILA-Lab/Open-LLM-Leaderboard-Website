@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-LLM-Leaderboard</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="tabels.css">
+ 
+    
+</head>
+<body>
+    <header>
+        <h1>Open-LLM-Leaderboard:</h1>
+        <h1 class="h1-2">From Multi-choice to Openstyle Questions for LLMs Evaluation, Benchmark, and Arena</h1>
+        
+        <span style="color:#924684; font-size: 13pt; font-family: Roboto, Helvetica, Arial, Heveltica Neue, sans-serif">
+						<span class="author-block">
+							<a style="text-decoration: none" target="_blank" href="https://github.com/aidarmyrzakhan">Aidar Myrzakhan</a><sup>*</sup>,&nbsp;
+						</span>
+                        <span class="author-block">
+							<a style="text-decoration: none" target="_blank" href="https://www.linkedin.com/in/sondos-bsharat-212303203/"> Sondos Mahmoud Bsharat</a><sup>*</sup>,&nbsp;
+						</span>
+                        <span class="author-block">
+							<a  style="text-decoration: none" target="_blank" href="https://zhiqiangshen.com/">Zhiqiang Shen</a><sup>*</sup>&nbsp;
+						</span>
+						
+					
+                        <br>
+                        <span class="author-block"><p class="contribution"><sup>*</sup>joint first author & equal contribution</p></span>
+
+						<img src="images/vilab.PNG" width="19" height="15" class="center">
+						<span class="author-block">
+                            <a  style="text-decoration: none;color:#924684 " target="_blank" href="https://github.com/VILA-Lab"><b>VILA Lab</b></a>
+                        </span>, 
+						<img src="images/mbz.PNG" width="20" height="15" class="center">
+						<span class="author-block"><a  style="text-decoration: none;color:#924684 " target="_blank" href="https://mbzuai.ac.ae/"><b>Mohamed bin Zayed University of AI (MBZUAI)</b></a></span> &nbsp;&nbsp;
+					</span>
+ 
+
+        <div class="second">
+            <nav>
+                <ul class="first">
+                    <li><a href="#" class="nav-link"><img src="images/arxiv-icon-removebg-preview.png" alt="Paper Icon">Paper</a></li>
+                    <li><a href="#" class="nav-link"><img src="images/github-logo_icon-icons.com_73546.png">Github</a></li>
+                    <li><a href="#" class="nav-link"><img src="images/hf-logo.png" alt="Paper Icon">Hugging Face</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <nav class="main-nav">
+                <ul class="second">
+                    <li><a href="Home.html" class="nav-link2" >Home</a></li>
+                    <li><a href="leaderboard.html" class="nav-link2 current">Open-LLM-Leaderboard</a></li>
+                    <li><a href="BenchMark.html" class="nav-link2">OSQ-Benchmark</a></li>
+                </ul>
+            </nav>
+        </div>
+           
+
+    </header>
+
+    <div class="key-findings Introduction">
+        <h3 class="widget-title">
+            <span class="section">
+                <a style="text-decoration: none" target="_blank" href="#home1">
+                    <b>
+                        <em>
+                            Open-LLM-Leaderboard
+                        </em>
+                    </b>
+                </a>
+            </span>
+        </h3>
+        <div class="multi-button">
+            <button onclick="loadData('small')">Small Scale</button>
+            <button onclick="loadData('large')">Large Scale</button>
+        </div>
+    
+          
+    
+        <div class="Intro-box">
+        
+            <table id="llmTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Model</th>
+                        <th onclick="sortTable(1)">Average</th>
+                        <th onclick="sortTable(2)">MMLU</th>
+                        <th onclick="sortTable(3)">WinoGrande</th>
+                        <th onclick="sortTable(4)">PIQA</th>
+                        <th onclick="sortTable(5)">CommonsenseQA</th>
+                        <th onclick="sortTable(6)">Race</th>
+                        <th onclick="sortTable(7)">MedMCQA</th>
+                        <th onclick="sortTable(8)">OpenkookQA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be added here dynamically -->
+                </tbody>
+            </table>
+           
+        </div>
+        <!-- The closing tag for the first Intro-box div is correct here -->
+
+    
+    </div> <!-- This closes the "key-findings Introduction", but there was already a missing closing tag issue -->
+    
+</body>
+
+<footer style="background-color: #e0d9d9; text-align: center; padding: 20px; font-size: 14px; color: #666;">
+    <p>&copy; 2024 by Aidar Myrzakhan, Sondos Mahmoud Bsharat, Zhiqiang Shen. All rights reserved.</p>
+    <p>Disclaimer: The information provided on this website is for educational and research purposes only.</p>
+    <p>
+        For more information, visit our
+        <a href="https://github.com/Open-LLM-Leaderboard">GitHub</a> or
+        <a href="https://www.mbzuai.ac.ae">Hugging Face</a>.
+    </p>
+</footer>
+</html>
