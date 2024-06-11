@@ -42,6 +42,10 @@ th:hover {
     overflow-x: auto; /* Enable horizontal scrolling */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
 }
+.multi-button button.active {
+    background-color: #0c2379; /* Color when button is active */
+    color: white; /* Text color for active state */
+}
 
 @media (max-width: 768px) {
     .table-container {
