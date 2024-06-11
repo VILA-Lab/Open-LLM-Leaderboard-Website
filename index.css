@@ -75,7 +75,7 @@ header nav ul li {
 
 .main {
     width: 100%;      /* Adjust the width as needed */
-    text-align: left; /* Aligns text to the left */
+    text-align: center; /* Aligns text to the left */
     margin: 0;        /* Removes any default margin */
     padding-left: 10px;       /* Adjust padding as needed */
    /* background-color:#34495E;  */ 
@@ -446,5 +446,13 @@ code{
         padding: 10px; /* Increase padding for better touch area */
         display: block;
         border-radius: 10px;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Decrease the font size of navigation links */
+    .main-nav ul.second li a {
+        font-size: 11px;
     }
 }
