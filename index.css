@@ -1,3 +1,10 @@
+@media screen and (max-width: 600px) {
+    /* Adjust header styles for smaller screens */
+    header {
+        /* Example styles */
+        padding: 10px;
+    }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
