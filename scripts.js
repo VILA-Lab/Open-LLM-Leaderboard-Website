@@ -228,6 +228,18 @@ function loadData(scale) {
     tableBody.innerHTML = ''; // Clear existing table data
     currentData = scale === 'small' ? smallScaleData : largeScaleData;
     displayData(currentData);
+
+     // Get all buttons
+    const buttons = document.querySelectorAll('.multi-button button');
+
+    // Remove 'active' class from all buttons
+    buttons.forEach(function(button) {
+        button.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked button
+    const activeButton = document.querySelector(`button[onclick="loadData('${scale}')"]`);
+    activeButton.classList.add('active');
 }
 
 function displayData(data) {
