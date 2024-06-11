@@ -403,4 +403,31 @@ code{
     color: #666;
 }
 
+/* Responsive styles */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 20px; /* Further reduce font size for smaller screens */
+    }
 
+    header .h1-2 {
+        font-size: 16px; /* Further reduce font size for smaller screens */
+    }
+
+    header .authors, header .contribution, header .affiliations {
+        font-size: 12px; /* Further reduce font size for smaller screens */
+        margin: 2px; /* Further reduce margin for tighter spacing */
+    }
+
+    a.nav-link {
+        font-size: 12px; /* Further reduce font size for smaller screens */
+        padding: 6px 12px; /* Further adjust padding for better touch area */
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Decrease the font size of navigation links */
+    .main-nav ul.second li a {
+        font-size: 11px;
+    }
+}
