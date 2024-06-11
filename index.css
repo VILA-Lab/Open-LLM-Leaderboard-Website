@@ -424,3 +424,27 @@ code{
     }
 }
 
+@media (max-width: 767px) {
+    .main {
+        text-align: left; /* Align the navigation to the left */
+    }
+
+    .main-nav {
+        display: block; /* Change to block level for full width */
+    }
+
+    .main-nav ul li {
+        display: block; /* Change to block level for full width */
+        margin-bottom: 10px; /* Add space between items */
+    }
+
+    .main-nav ul li:last-child {
+        margin-bottom: 0; /* Remove margin for last item */
+    }
+
+    .main-nav ul li a {
+        padding: 10px; /* Increase padding for better touch area */
+        display: block;
+        border-radius: 10px;
+    }
+}
