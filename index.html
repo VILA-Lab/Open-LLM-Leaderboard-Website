@@ -143,27 +143,25 @@
                             <li><b>Stage 2: Confidence Score Assignment:</b> Convertible questions are then assigned a confidence score (1-10) indicating the likelihood of being answered in an open-style format. Questions below a certain threshold are excluded, ensuring only the most suitable questions are selected.</li>
                         </ul>
                     </li>
-                    <li><b>Open-style Question Answer Evaluation:</b> We designed customized prompts to evaluate the correctness of LLM responses to open-style questions. The evaluation involves:
+                    <li><b>Open-style Question Answer Evaluation:</b> We designed customized prompts to evaluate the correctness of LLM responses to open-style questions. The evaluation involve:
                         <ul>
                             <li>Using the correct MCQ answer as the ground truth.</li>
-                            <li>Ensuring responses do not contain conflicting statements and accommodating minor differences in phrasing.</li>
                         </ul>
                     </li>
                     <li><b>Validation of Automatic Evaluation Strategy:</b> To validate our approach, we manually checked a random sample of 100 results from the automatic evaluation, confirming an error rate of less than 3%.</li>
-                    <li><b>Comprehensive Analysis and Ranking:</b> We conducted a thorough assessment of five well-recognized LLMs (including GPT-4, ChatGPT, Claude-3 Opus, Gemini-Pro, and Mistral-Large) using our benchmark. The results indicate a high correlation between rankings from our open-style benchmark and those derived from human assessments, with GPT-4 emerging as the strongest LLM.</li>
+                    <li><b>Comprehensive Analysis and Ranking:</b> We conducted a thorough assessment of well-recognized LLMs including (GPT-4o, GPT-4, GPT-3.5, Claude-3 Opus, Gemini-Pro, and Mistral-Large) using our benchmark.Theperformance of GPT-4o overall demonstrates its leading edge, with an accuracy of 70.15%, which
+indicates its robustness in open-style question answering tasks compared to other models. It is followed
+by GPT-4-1106-preview with 65.93%, and Claude-3 Opus with 62.68%. These results highlight the
+9
+advanced capabilities of the GPT-4 series. Mid-tier models like Mistral Large and GPT-3.5 perform
+well but are not on par with the top performers. On the other hand, models like Gemini 1.0 Pro and
+Llama3-70b-Instruct lag behind in terms of the capabilities to answer the open-style questions.
+The performance evaluation of smaller-scale LLMs reveals that Qwen1.5 leads with an overall.</li>
                 </ul>
         </div>
 
     </div>
 
-    <!-- <div class="key-findings">
-        <h2>Results and Analysis:</h2>
-            <ol>
-                <li><b>Benchmark Performance:</b> The Open-LLM-Benchmark evaluated several LLMs, including GPT-4, ChatGPT, Claude-3 Opus, and Gemini-Pro. Our analysis shows that GPT-4 remains the strongest LLM, despite claims by other leaderboards about Claude-3 Opus.</li>
-                <li><b>Leaderboard Insights:</b> On average, the accuracy of LLMs on open-style questions is about 25% lower than on MCQs, highlighting the difficulty of open-style question answering but providing a more genuine evaluation of LLM capabilities.</li>
-                <li><b>Dataset Diversity:</b> Our benchmark includes questions from diverse datasets like MMLU, ARC, and MedMCQA, ensuring a comprehensive evaluation across various domains.</li>
-            </ol>
-    </div> -->
 
     <div class="key-findings" id="misc">
         <h4 class="widget-title"><span><b>Citation.</b></span></h4>
