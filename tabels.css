@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+    cursor: pointer; /* Indicates that a header is clickable */
+}
+
+th:hover {
+    background-color: #c7cfed; /* Darker green when hovered */
+}
+
+.multi-button{
+    margin: 10px 0;
+}
+.multi-button button {
+    background-color: #5362a0; /* Green background */
+    border: none; /* No borders */
+    color: white; /* White text */
+    padding: 15px 32px; /* Padding inside the button */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* No underline */
+    display: inline-block; /* Align buttons in a row */
+    font-size: 16px; /* Text size */
+    margin: 4px 2px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+.multi-button button:hover {
+    background-color: #0c2379; /* Darker green when hovered */
+}
