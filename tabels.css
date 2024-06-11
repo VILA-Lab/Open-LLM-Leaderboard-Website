@@ -1,7 +1,6 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    overflow-x: auto; /* Enable horizontal scrolling */
 }
 th, td {
     border: 1px solid #ddd;
