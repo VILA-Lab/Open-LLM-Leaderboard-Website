@@ -38,12 +38,6 @@ th:hover {
     background-color: #0c2379; /* Darker green when hovered */
 }
 
-/* Make the table scrollable horizontally on smaller screens */
-@media screen and (max-width: 600px) {
-    table {
-        overflow-x: auto;
-    }
-}
 
 /* Prevent text wrapping in table cells */
 th, td {
