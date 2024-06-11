@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-LLM-Leaderboard</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="tabels.css">
+ 
+    
+</head>
+<body>
+    <header>
+        <h1>Open-LLM-Leaderboard:</h1>
+        <h1 class="h1-2">From Multi-choice to Openstyle Questions for LLMs Evaluation, Benchmark, and Arena</h1>
+        
+        <span style="color:#924684; font-size: 13pt; font-family: Roboto, Helvetica, Arial, Heveltica Neue, sans-serif">
+						<span class="author-block">
+							<a style="text-decoration: none" target="_blank" href="https://github.com/aidarmyrzakhan">Aidar Myrzakhan</a><sup>*</sup>,&nbsp;
+						</span>
+                        <span class="author-block">
+							<a style="text-decoration: none" target="_blank" href="https://www.linkedin.com/in/sondos-bsharat-212303203/"> Sondos Mahmoud Bsharat</a><sup>*</sup>,&nbsp;
+						</span>
+                        <span class="author-block">
+							<a  style="text-decoration: none" target="_blank" href="https://zhiqiangshen.com/">Zhiqiang Shen</a><sup>*</sup>&nbsp;
+						</span>
+						
+					
+                        <br>
+                        <span class="author-block"><p class="contribution"><sup>*</sup>joint first author & equal contribution</p></span>
+
+						<img src="images/vilab.PNG" width="19" height="15" class="center">
+						<span class="author-block">
+                            <a  style="text-decoration: none;color:#924684 " target="_blank" href="https://github.com/VILA-Lab"><b>VILA Lab</b></a>
+                        </span>, 
+						<img src="images/mbz.PNG" width="20" height="15" class="center">
+						<span class="author-block"><a  style="text-decoration: none;color:#924684 " target="_blank" href="https://mbzuai.ac.ae/"><b>Mohamed bin Zayed University of AI (MBZUAI)</b></a></span> &nbsp;&nbsp;
+					</span>
+ 
+
+        <div class="second">
+            <nav>
+                <ul class="first">
+                    <li><a href="#" class="nav-link"><img src="images/arxiv-icon-removebg-preview.png" alt="Paper Icon">Paper</a></li>
+                    <li><a href="#" class="nav-link"><img src="images/github-logo_icon-icons.com_73546.png">Github</a></li>
+                    <li><a href="#" class="nav-link"><img src="images/hf-logo.png" alt="Paper Icon">Hugging Face</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <nav class="main-nav">
+                <ul class="second">
+                    <li><a href="Home.html" class="nav-link2" >Home</a></li>
+                    <li><a href="leaderboard.html" class="nav-link2">Open-LLM-Leaderboard</a></li>
+                    <li><a href="BenchMark.html" class="nav-link2 current">OSQ-Benchmark</a></li>
+                </ul>
+            </nav>
+        </div>
+           
+
+    </header>
+
+    <div class="key-findings Introduction">
+        <h3 class="widget-title">
+            <span class="section">
+                <a style="text-decoration: none" target="_blank" href="#home1">
+                    <b>
+                        <em>
+                            Benchmark
+                        </em>
+                    </b>
+                </a>
+            </span>
+            <img src="images/data_distribution.png" width="60%" height="80%" class="m"> 
+        </h3>
+        <p>
+            <em>
+                <b style="color: #581e4d;">The Open-style Question Benchmark (OSQ-bench)</b>  is at the forefront of refining how large language 
+                models (LLMs) are evaluated. Moving away from traditional multiple-choice questions (MCQs), 
+                OSQ-bench introduces open-style questions to eliminate common biases and enhance the assessment's 
+                accuracy. This section details the benchmark's design, showcasing the extensive range and 
+                quality of questions it includes and explaining the substantial benefits this format offers. 
+                Discover how OSQ-bench is setting new standards in measuring LLMs' true comprehension and 
+                reasoning abilities, making it a cornerstone for future advancements in AI evaluation.
+            </em>
+        </p>
+        <br><br><br><be><br><br>
+          
+    
+    </div> <!-- This closes the "key-findings Introduction", but there was already a missing closing tag issue -->
+    
+    <!-- Repeat the structure for other findings sections -->
+    <div class="key-findings">
+        <h2>Statistics and Distributions</h2>
+        <ul>
+            <li><b>Total Questions Evaluated:</b> 42,000 questions from 9 different datasets.</li>
+            <li><b>Questions Suitable for Open-style:</b>Over 24,000 questions.</li>
+            <li><b>Domains Covered:</b>Includes a variety of fields like humanities, social sciences, STEM, literature comprehension, 
+                and more, indicating a comprehensive coverage.</li>
+        </ul>
+        
+        <div class="Intro-box">
+            <table border="1">
+                <caption>Table 2: Statistics on open-style questions across different datasets.</caption>
+                <thead>
+                    <tr>
+                        <th>Benchmarks</th>
+                        <th>#Evaluated</th>
+                        <th>#Open-Style</th>
+                        <th>Average Question Length</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MMLU</td>
+                        <td>14,042</td>
+                        <td>7,879</td>
+                        <td>36.6</td>
+                    </tr>
+                    <tr>
+                        <td>ARC</td>
+                        <td>3,548</td>
+                        <td>3,241</td>
+                        <td>21.1</td>
+                    </tr>
+                    <tr>
+                        <td>MedMCQA</td>
+                        <td>4,183</td>
+                        <td>2,336</td>
+                        <td>14.1</td>
+                    </tr>
+                    <tr>
+                        <td>Race</td>
+                        <td>4,934</td>
+                        <td>3,528</td>
+                        <td>10.0</td>
+                    </tr>
+                    <tr>
+                        <td>OpenbookQA</td>
+                        <td>1,000</td>
+                        <td>494</td>
+                        <td>10.3</td>
+                    </tr>
+                    <tr>
+                        <td>WinoGrande</td>
+                        <td>1,267</td>
+                        <td>1,267</td>
+                        <td>19.1</td>
+                    </tr>
+                    <tr>
+                        <td>HellaSwag</td>
+                        <td>10,042</td>
+                        <td>3,945</td>
+                        <td>40.1</td>
+                    </tr>
+                    <tr>
+                        <td>PiQA</td>
+                        <td>1,838</td>
+                        <td>700</td>
+                        <td>7.1</td>
+                    </tr>
+                    <tr>
+                        <td>Overall</td>
+                        <td>42,075</td>
+                        <td>24,104</td>
+                        <td>19.05</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+        
+        
+    </div>
+    <div class="key-findings">
+        <h2>Diversity</h2>
+        <ul>
+            <li><b>Question Types:</b>  Assesses LLMs 
+                on a broad range of question types from various datasets, reflecting diverse intellectual and 
+                practical domains.</li>
+            <li><b>Interdisciplinary Nature:</b> Emphasizes the
+                 interdisciplinary approach of the dataset, featuring categories such as natural sciences, technology, 
+                 and humanities.</li>    
+        </ul>
+    </div>
+
+    <div class="key-findings">
+        <h2>Quality</h2>
+        <ul>
+            <li><b>Source of Questions:</b>Derived from recognized and reputable datasets, ensuring quality and 
+                relevance.</li>
+            <li><b>Filtering Accuracy:</b>Low false positive rate (~5%), demonstrating the effectiveness of the 
+                filtering process in selecting suitable questions for open-style answering.</li>    
+        </ul>
+    </div>
+
+    <div class="key-findings">
+        <h2>Property and Advantage</h2>
+        <ul>
+            <li><b>Debiased Evaluation:</b> Focuses on providing a debiased approach by shifting away from MCQs, which are susceptible to selection bias and random guessing.</li>
+            <li><b>Efficiency and Cost-effectiveness:</b> Offers a quicker and less expensive evaluation method through automated systems, reducing reliance on extensive human assessment.</li>
+            <li><b>Real-time Performance Tracking:</b> The benchmark includes the MBZUAI-LLM-Leaderboard, enabling ongoing monitoring and comparison of LLM performance across different metrics and conditions.</li>
+        </ul>
+        
+
+    </div>
+
+</body>
+<footer style="background-color: #e0d9d9; text-align: center; padding: 20px; font-size: 14px; color: #666;">
+    <p>&copy; 2024 by Aidar Myrzakhan, Sondos Mahmoud Bsharat, Zhiqiang Shen. All rights reserved.</p>
+    <p>Disclaimer: The information provided on this website is for educational and research purposes only.</p>
+    <p>
+        For more information, visit our
+        <a href="https://github.com/Open-LLM-Leaderboard">GitHub</a> or
+        <a href="https://www.mbzuai.ac.ae">Hugging Face</a>.
+    </p>
+</footer>
+</html>
