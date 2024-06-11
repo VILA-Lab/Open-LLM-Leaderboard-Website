@@ -36,3 +36,20 @@ th:hover {
 .multi-button button:hover {
     background-color: #0c2379; /* Darker green when hovered */
 }
+
+/*----------------------------- */
+.table-container {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        width: 100%;
+        overflow-x: auto; /* Horizontal scrolling for smaller screens */
+    }
+
+    table {
+        width: 100%; /* Ensure table is responsive */
+    }
+}
