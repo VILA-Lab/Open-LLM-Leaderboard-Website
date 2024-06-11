@@ -424,7 +424,7 @@ code{
     }
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .main {
         text-align: left; /* Align the navigation to the left */
     }
@@ -447,7 +447,7 @@ code{
         display: block;
         border-radius: 10px;
     }
-}
+} */
 
 /* Responsive styles */
 @media (max-width: 768px) {
