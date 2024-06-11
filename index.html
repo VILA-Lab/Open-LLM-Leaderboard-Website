@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-LLM-Leaderboard</title>
+    <link rel="stylesheet" href="home1.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Open-LLM-Leaderboard:</h1>
+        <h1 class="h1-2">From Multi-choice to Openstyle Questions for LLMs Evaluation, Benchmark, and Arena</h1>
+        
+        <span style="color:#924684; font-size: 13pt; font-family: Roboto, Helvetica, Arial, Heveltica Neue, sans-serif">
+						<span class="author-block">
+							<a style="text-decoration: none" target="_blank" href="https://github.com/aidarmyrzakhan">Aidar Myrzakhan</a><sup>*</sup>,&nbsp;
+						</span>
+                        <span class="author-block">
+							<a style="text-decoration: none" target="_blank" href="https://www.linkedin.com/in/sondos-bsharat-212303203/"> Sondos Mahmoud Bsharat</a><sup>*</sup>,&nbsp;
+						</span>
+                        <span class="author-block">
+							<a  style="text-decoration: none" target="_blank" href="https://zhiqiangshen.com/">Zhiqiang Shen</a><sup>*</sup>&nbsp;
+						</span>
+						
+					
+                        <br>
+                        <span class="author-block"><p class="contribution"><sup>*</sup>joint first author & equal contribution</p></span>
+
+						<img src="images/vilab.PNG" width="19" height="15" class="center">
+						<span class="author-block">
+                            <a  style="text-decoration: none;color:#924684 " target="_blank" href="https://github.com/VILA-Lab"><b>VILA Lab</b></a>
+                        </span>, 
+						<img src="images/mbz.PNG" width="20" height="15" class="center">
+						<span class="author-block"><a  style="text-decoration: none;color:#924684 " target="_blank" href="https://mbzuai.ac.ae/"><b>Mohamed bin Zayed University of AI (MBZUAI)</b></a></span> &nbsp;&nbsp;
+					</span>
+ 
+
+        <div class="second">
+            <nav>
+                <ul class="first">
+                    <li><a href="#" class="nav-link"><img src="images/arxiv-icon-removebg-preview.png" alt="Paper Icon">Paper</a></li>
+                    <li><a href="#" class="nav-link"><img src="images/github-logo_icon-icons.com_73546.png">Github</a></li>
+                    <li><a href="#" class="nav-link"><img src="images/hf-logo.png" alt="Paper Icon">Hugging Face</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <nav class="main-nav">
+                <ul class="second">
+                    <li><a href="Home.html" class="nav-link2 current" >Home</a></li>
+                    <li><a href="leaderboard.html" class="nav-link2">Open-LLM-Leaderboard</a></li>
+                    <li><a href="BenchMark.html" class="nav-link2 ">OSQ-Benchmark</a></li>
+                </ul>
+            </nav>
+        </div>
+           
+
+    </header>
+    
+
+    <div class="key-findings Introduction">
+        
+        <h3 class="widget-titlee">
+            <a style="text-decoration: none" target="_blank" href="#home1">
+                <b>
+                    <em style="text-align: center;">
+                        Welcome to Our Research titled<br> 'Open-LLM-Leaderboard: 
+                        From Multi-choice to Open-style Questions for LLMs Evaluation, Benchmark, and Arena'
+                    </em>
+                </b>
+            </a>
+    </h3>
+    <h4 class="text_t">
+       <em> Discover our innovative approach, which moves beyond traditional Multiple-Choice Questions (MCQs) to <b>Open-Style Questions</b>. This shift aims to eliminate inherent
+         biases and random guessing prevalent in MCQs, providing a clearer insight into the true capabilities of LLMs.</em>
+    </h4>
+
+        <div class="Intro-box">
+            <h2 style="color:#851871">Introduction:</h2>
+            <p> 
+                Large language models (LLMs) excel at various natural language processing tasks but need robust evaluation 
+                strategies to assess their performance accurately. Traditionally, MCQs have been used for this purpose. However, they are prone to selection bias and random guessing. This paper presents a new approach by transitioning from MCQs to open-style questions, aiming to provide a more accurate assessment of LLM capabilities. We introduce 
+                both the Open-LLM-Leaderboard and a new benchmark to evaluate and compare the performance of different LLMs.
+            </p>
+        </div>
+
+    
+        <div class="Intro-box">
+            <h2 style="color:#851871"> Beyond Multiple-Choice Questions:</h2>
+            <p>Multiple-choice questions (MCQs) are frequently used to assess large language models (LLMs).
+                 Unfortunately, MCQs can lead to biases due to inherent unbalanced probabilities influencing 
+                 predictions. Our research introduces a new benchmark through entirely open-style questions,
+                  shifting away from MCQs to better reflect true LLM capabilities.</p>
+            <p>
+                To fundamentally eliminate selection bias and random guessing in LLMs, in this work, we build 
+                 an open-style question benchmark for LLM evaluation. Leveraging this benchmark, we present the
+                 Open-LLM-Leaderboard, a new automated framework designed to refine the assessment process of LLMs. 
+            </p>      
+        </div>
+
+    
+        <!-- This opening div is interpreted as a new sibling to the previous Intro-box and the h3, not as a child of "key-findings Introduction" -->
+      
+        <!-- The closing div tag here is expected to close the "key-findings Introduction", but it only closes the last "Intro-box" -->
+    
+    </div> <!-- This closes the "key-findings Introduction", but there was already a missing closing tag issue -->
+    
+    <!-- Repeat the structure for other findings sections -->
+    <div class="key-findings">
+        <h2>Key Findings:</h2>
+        <div class="Intro-box">
+        <ul >
+            <li><b>Reduction of Selection Bias:</b> Open-style questions eliminate the tendency of LLMs to favor certain answer choices, reducing selection bias.</li>
+            <li><b>Minimization of Random Guessing:</b> Open-style questions prevent LLMs from guessing answers, providing a clearer picture of their true knowledge and capabilities.</li>
+            <li><b>New Benchmark:</b> The Open-LLM-Benchmark provides a comprehensive evaluation framework using open-style questions across various datasets.</li>
+            <li><b>Leaderboard Insights:</b> The Open-LLM-Leaderboard tracks the performance of various LLMs, with GPT-4 currently holding the top position, offering a clear comparison of their capabilities.</li>
+        </ul>
+        <!-- <img src="images/data_distribution.png" width="40%" height="%50" class="center"> -->
+    </div>
+        </div>
+    </div>
+    <div class="key-findings">
+        <h2>Methodology:</h2>
+            <!-- First box in the white area-->
+        <div class="Intro-box">
+            <ul>
+                <li><b>Defining Open-style Questions:</b><p>Open-style questions require models to generate answers without being constrained by predetermined choices, aiming to assess the model’s ability to generate coherent and contextually appropriate responses. 
+                This approach helps avoid selection bias and random guessing inherent in MCQs.</p></li>
+            </ul>
+        </div>
+
+       
+  <!-- 2 box in the white area-->
+  <h2>Automatic Open-style Question Filtering and Generation:</h2>
+        <div class="styled-box">
+                <img src="images/Pipeline_New_Prompt.png" width="50%" height="50%" class="m"> 
+               
+                <ul>
+                    <li><b>Multi-stage Filtering and Postprocessing:</b> We implemented a multi-stage filtering process to convert MCQs to open-style questions. This involves:
+                        <ul>
+                            <li><b>Stage 1: Preliminary Filter using Binary Classification:</b> We initially classify questions as either convertible or non-convertible using a binary classification prompt. Questions that rely heavily on their choices are marked as non-convertible.</li>
+                            <li><b>Stage 2: Confidence Score Assignment:</b> Convertible questions are then assigned a confidence score (1-10) indicating the likelihood of being answered in an open-style format. Questions below a certain threshold are excluded, ensuring only the most suitable questions are selected.</li>
+                        </ul>
+                    </li>
+                    <li><b>Open-style Question Answer Evaluation:</b> We designed customized prompts to evaluate the correctness of LLM responses to open-style questions. The evaluation involves:
+                        <ul>
+                            <li>Using the correct MCQ answer as the ground truth.</li>
+                            <li>Ensuring responses do not contain conflicting statements and accommodating minor differences in phrasing.</li>
+                        </ul>
+                    </li>
+                    <li><b>Validation of Automatic Evaluation Strategy:</b> To validate our approach, we manually checked a random sample of 100 results from the automatic evaluation, confirming an error rate of less than 3%.</li>
+                    <li><b>Comprehensive Analysis and Ranking:</b> We conducted a thorough assessment of five well-recognized LLMs (including GPT-4, ChatGPT, Claude-3 Opus, Gemini-Pro, and Mistral-Large) using our benchmark. The results indicate a high correlation between rankings from our open-style benchmark and those derived from human assessments, with GPT-4 emerging as the strongest LLM.</li>
+                </ul>
+        </div>
+
+    </div>
+
+    <!-- <div class="key-findings">
+        <h2>Results and Analysis:</h2>
+            <ol>
+                <li><b>Benchmark Performance:</b> The Open-LLM-Benchmark evaluated several LLMs, including GPT-4, ChatGPT, Claude-3 Opus, and Gemini-Pro. Our analysis shows that GPT-4 remains the strongest LLM, despite claims by other leaderboards about Claude-3 Opus.</li>
+                <li><b>Leaderboard Insights:</b> On average, the accuracy of LLMs on open-style questions is about 25% lower than on MCQs, highlighting the difficulty of open-style question answering but providing a more genuine evaluation of LLM capabilities.</li>
+                <li><b>Dataset Diversity:</b> Our benchmark includes questions from diverse datasets like MMLU, ARC, and MedMCQA, ensuring a comprehensive evaluation across various domains.</li>
+            </ol>
+    </div> -->
+
+    <div class="key-findings" id="misc">
+        <h4 class="widget-title"><span><b>Citation.</b></span></h4>
+        <div style="font-size:15px">
+            <pre><code>@article{,
+                title = {Open-LLM-Leaderboard: From Multi-choice to Open-style Questions for LLMs Evaluation, Benchmark, and Arena},
+                author = {Aidar Myrzakhan, Sondos Mahmoud Bsharat, Zhiqiang Shen},
+                journal = {ArXiv preprint},
+                year = {2024}
+            }
+</code></pre>
+        </div>
+    </div>
+
+</body>
+<footer style="background-color: #e0d9d9; text-align: center; padding: 20px; font-size: 14px; color: #666;">
+    <p>&copy; 2024 by Aidar Myrzakhan, Sondos Mahmoud Bsharat, Zhiqiang Shen. All rights reserved.</p>
+    <p>Disclaimer: The information provided on this website is for educational and research purposes only.</p>
+    <p>
+        For more information, visit our
+        <a href="https://github.com/Open-LLM-Leaderboard">GitHub</a> or
+        <a href="https://www.mbzuai.ac.ae">Hugging Face</a>.
+    </p>
+</footer>
+</html>
