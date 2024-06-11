@@ -36,10 +36,3 @@ th:hover {
 .multi-button button:hover {
     background-color: #0c2379; /* Darker green when hovered */
 }
-
-
-/* Prevent text wrapping in table cells */
-th, td {
-    white-space: nowrap;
-}
-
