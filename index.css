@@ -424,4 +424,10 @@ code{
     }
 }
 
-
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Decrease the font size of navigation links */
+    .main-nav ul.second li a {
+        font-size: 11px;
+    }
+}
